@@ -1,11 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-    <title>My Homepage</title>
-    <link rel="stylesheet" type="text/css" href=css_test.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>会社紹介</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to Bluepoint</h1>
-    <p>これはサンプルのホームページです。</p>
+    <header>
+        <h1>会社名</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">会社紹介</a></li>
+                <li><a href="#products">商品紹介</a></li>
+                <li><a href="#location">所在地</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>会社紹介</h2>
+        <p>当社は高品質な製品を提供する企業です。お客様の満足を第一に考え、常に革新を追求しています。</p>
+    </section>
+
+    <section id="products">
+        <h2>商品紹介</h2>
+        <div class="product-container">
+            <div class="product">
+                <img src="product1.jpg" alt="商品1">
+                <p>商品名1</p>
+            </div>
+            <div class="product">
+                <img src="product2.jpg" alt="商品2">
+                <p>商品名2</p>
+            </div>
+            <div class="product">
+                <img src="product3.jpg" alt="商品3">
+                <p>商品名3</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="location">
+        <h2>所在地</h2>
+        <p>東京都〇〇区△△町1-2-3</p>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093703!2d144.9537353155041!3d-37.8172097420211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d5df1f7cf53%3A0x5045675218ce7e33!2z44CSMzAwMC0wMDEg5p2x5Lqs6YO95ZOB5bed55Sw5Yy66ZqO5Y-w77yT5LiB55uu77yS77yR4oiS77yR77yU!5e0!3m2!1sja!2sjp!4v1614200387349!5m2!1sja!2sjp"
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 会社名. All rights reserved.</p>
+    </footer>
 </body>
 </html>
